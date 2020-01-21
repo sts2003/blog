@@ -1,0 +1,54 @@
+@keyframes menuHover {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes menuStart {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-10px);
+    opacity: 1;
+  }
+}
+
+.box {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.box .box__nav {
+  animation: menuStart 1s forwards;
+  cursor: pointer;
+  height: 100vh;
+  background-color: rosybrown;
+}
+
+.box .box__nav .nav .nav__items {
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: #ffffff solid 1px;
+}
+
+.nav .nav__items:hover {
+  animation: menuHover 1s infinite;
+}
+
+.box .box__content {
+  margin-left: 13%;
+}
+
+.box .box__nav .nav .nav__items a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 20px;
+  cursor: pointer;
+}

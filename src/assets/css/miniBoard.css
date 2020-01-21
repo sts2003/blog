@@ -1,0 +1,29 @@
+.mini {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.mini .mini__thead .thead__tr {
+  font-size: 18px;
+  border-bottom: 1px solid #0b0b0b;
+}
+
+.mini .mini__thead .thead__tr .tr__th {
+  padding: 5px 20px;
+}
+
+.mini .mini__thead .thead__tr .tr__th:first-child {
+  padding: 5px 70px;
+}
+
+.mini .mini__tbody tr {
+  cursor: pointer;
+}
+
+.mini .mini__tbody tr:nth-child(even) {
+  background-color: rgba(188, 188, 188, 0.3);
+}
+
+.mini .mini__tbody tr:hover {
+  background-color: rgba(188, 188, 188, 0.8);
+}
