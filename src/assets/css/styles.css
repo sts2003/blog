@@ -2,6 +2,17 @@
 @import "./reset.css";
 @import "./home.css";
 @import "./miniBoard.css";
+@import "./about.css";
+@import "./portBox.css";
+
+@keyframes initStart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 body {
   background-image: url(../img/spikes.png);
